@@ -106,13 +106,14 @@ import tarfile
 
 import numpy as np
 from six.moves import urllib
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+# import tensorflow as tf
 
 from tensorflow.python.framework import graph_util
 from tensorflow.python.framework import tensor_shape
 from tensorflow.python.platform import gfile
 from tensorflow.python.util import compat
-
+# tf.compat.v1
 FLAGS = None
 
 # These are all parameters that are tied to the particular model architecture

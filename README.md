@@ -18,3 +18,10 @@ This repo contains simplified and trimmed down version of tensorflow's example i
 
 The `scripts` directory contains helpers for the codelab. Some of these come from the main TensorFlow repository, and are included here so you can use them without also downloading the main TensorFlow repo (they are not part of the TensorFlow `pip` installation).
 
+
+## Running Steps
+
+```
+python -m scripts.retrain --bottleneck_dir=tf_files/bottlenecks --how_many_training_steps=500 —model_dir=tf_files/models/ --summaries_dir=tf_files/training_summaries/"${ARCHITECTURE}" --output_graph=tf_files/retrained_graph.pb --output_labels=tf_files/retrained_labels.txt --architecture="${ARCHITECTURE}" --image_dir=tf_files/conditions/
+```
+

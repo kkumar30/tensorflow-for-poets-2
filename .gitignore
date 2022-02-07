@@ -8,3 +8,6 @@ local.properties
 android.iml
 .gradle/
 android/assets/*
+android/.DS_Store
+
+*/.DS_Store
